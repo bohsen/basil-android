@@ -62,7 +62,6 @@ android {
         removeUnusedCode = true
         optimizeCode = true
         obfuscate = false
-        // https://github.com/material-components/material-components-android/issues/115
       }
     }
   }
@@ -90,7 +89,8 @@ dependencies {
   implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Deps.coroutines}"
   implementation "org.jetbrains.kotlinx:kotlinx-coroutines-reactive:${Deps.coroutines}"
 
-  implementation 'com.google.android.material:material:1.0.0-alpha1'
+  implementation 'com.google.android.material:material:1.0.0-beta01'
+  implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
   implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
   implementation "androidx.lifecycle:lifecycle-livedata:2.0.0-beta01"
   implementation "androidx.room:room-runtime:$Deps.room"
